@@ -1,0 +1,29 @@
+import SwapTransition kivy.uix.screenmanager.SwapTransition
+
+<Ui>:
+    transition: SwapTransition()
+    MDScreen:
+        name: 'login'
+        md_bg_color: 0,0,0,1
+        MDBoxLayout:
+            orientation: 'vertical'
+            spacing:dp(12)
+            padding: dp(12)
+            MDBoxLayout:
+                orientation:'vertical'
+                size_hint_y:0.3
+                Image:
+                    source: 'logo.png'
+                    pos_hint: {'center_x':0.5}
+                MDLbael:
+                    text: 'Iniciar sesion'
+                    halgin: 'center'
+                    color: '#FFSA1E'
+                    font_size:dp(28)
+                    bold: True
+                    pos_hint: {'center_y':.5}
+            MDBoxLayout:
+                orientation:'vertical'
+                size_hint_y:0.3
+                spacing: dp(12)
+                MDTextField:
